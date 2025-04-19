@@ -14,10 +14,10 @@ class TextNode:
         self.text_type = text_type
         self.url = url
     
-    def __eq__(self, text_node):
-        if (self.text == text_node.text 
-            and self.text_type.value == text_node.text_type.value 
-            and self.url == text_node.url):
+    def __eq__(self, other):
+        if (self.text == other.text 
+            and self.text_type.value == other.text_type.value 
+            and self.url == other.url):
             return True
         else:
             return False
